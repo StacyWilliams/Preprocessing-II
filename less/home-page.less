@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
+    
     
     .text-content {
       width: 48%;
@@ -25,7 +25,7 @@
 
   .inverse-content {
     padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    border-bottom: 2px solid @navigation-border;
 
     .text-content {
       padding-left: 1%;
@@ -45,6 +45,7 @@
     img {
       border-radius: 10px;
     }
+    
   }
 
   .content-pick {
@@ -52,10 +53,32 @@
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+   
+      @media @mobile {
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+
+        
+      }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
+     
+      @media @mobile {
+        .btn {
+          background-color: teal;
+
+        }
+      }
+     
     }
+   
+      
+      
+          
   }
 }// home
