@@ -1,1 +1,22 @@
 // Mixins in here
+
+.buttonstyle(@width; @bgc; @tc; @fontsize) {
+	max-width: @width;
+	background-color: @bgc;
+	color: @tc;
+	border-radius: 10px;
+	font-size: @fontsize;
+	text-align: center;
+	vertical-align: middle;
+	line-height: 1.5rem;
+	padding: 1vh;
+
+	@media@mobile {
+		background-color: @button-bg;
+	}
+
+	.rotationanimation(@angle; @transition) {
+		transform: rotateZ(@angle);
+		transition: @transition;
+	}
+}
