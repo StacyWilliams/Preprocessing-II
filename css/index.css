@@ -174,19 +174,26 @@ img {
   height: 75px;
   border-bottom: 2pz dashed #C0C0C0;
 }
-.nav .nav-all {
+@media (max-width: 600px) {
+  .nav nav {
+    display: inline;
+    flex-direction: column;
+  }
+}
+.nav-all {
   height: 100%;
   margin: 5px;
+  padding: 10px;
 }
-.nav ul {
+.nav-all ul {
   display: flex;
   justify-content: space-between;
 }
-.nav li {
+.nav-all li {
   margin: 0 20px;
   font-size: 1.3em;
 }
-.nav a {
+.nav-all a {
   text-decoration: none;
   color: black;
 }
@@ -205,6 +212,13 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width: 600px) {
+  .home .content-section {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
