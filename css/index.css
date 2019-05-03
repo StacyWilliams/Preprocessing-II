@@ -275,6 +275,26 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.home .content-pick .btn {
+  max-width: 100%;
+  background-color: #06806f;
+  color: white;
+  border-radius: 10px;
+  font-size: 2rem;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 1.5rem;
+  padding: 1vh;
+}
+@media (max-width: 600px) {
+  .home .content-pick .btn {
+    background-color: #17A2B8;
+  }
+}
+.home .content-pick .btn:hover {
+  transform: rotateZ(360deg);
+  transition: 1s;
+}
 @media (max-width: 600px) {
   .home .content-pick {
     flex-direction: column;
@@ -290,9 +310,5 @@ body {
   .home .content-pick .destination {
     width: 99%;
     text-align: center;
-  }
-  .home .content-pick .destination .btn {
-    background-color: teal;
-    width: 40%;
   }
 }

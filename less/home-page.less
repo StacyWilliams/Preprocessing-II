@@ -27,6 +27,7 @@
 	.inverse-content {
 		padding-bottom: 30px;
 		border-bottom: 2px solid @navigation-border;
+
 		@media @mobile {
 			flex-direction: column;
 		}
@@ -68,6 +69,13 @@
 		display: flex;
 		justify-content: space-between;
 
+		.btn {
+			.buttonstyle(100%; #06806f; white; 2rem);
+
+			&:hover {
+				.rotationanimation(360deg; 1s);
+			}
+		}
 		@media @mobile {
 			flex-direction: column;
 			justify-content: center;
@@ -82,11 +90,10 @@
 				width: 99%;
 				text-align: center;
 
-				.btn {
-					background-color: teal;
-					width: 40%;
-					// margin: 10px 35%;
-				}
+				// .btn {
+				// 	background-color: teal;
+				// 	width: 40%;
+				// }
 			}
 		}
 	}
