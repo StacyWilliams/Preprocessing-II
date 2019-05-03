@@ -3,31 +3,25 @@
     
     display: flex;
     justify-content: space-around;
-    height: 75px;
-    border-bottom: 2pz dashed @navigation-border;
+    border-bottom: 2px dashed @navigation-border;
 
-    @media @mobile {
-            
-                        
-        nav{
-            display: inline;
-            flex-direction: column;
-        }
-        
+    
 
-        
-      } 
-}
-
-   
-    .nav-all {
         
         height: 100%;
         margin: 5px;
         padding: 10px;
         
         
+        @media @mobile {
 
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            
+      
+            
+          }
 
 
    ul {
@@ -49,9 +43,10 @@
        text-decoration: none;
        color: black;
    }
+
+
+
+
+
+
 }
-
-
-
-
-
