@@ -1,61 +1,100 @@
 .home {
+	.content-section {
+		margin: 30px 0;
+		display: flex;
 
-  .content-section {
-    margin: 30px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+		justify-content: space-between;
 
-   
-    
-    .text-content {
-      width: 48%;
-      padding-right: 1%;
-    }
+		@media @mobile {
+			flex-direction: column-reverse;
+			justify-content: center;
+			align-items: center;
+		}
 
-    .img-content {
-      width: 48%;
-      padding-left: 1%;
+		.text-content {
+			padding-right: 1%;
+		}
 
-      img {
-        border-radius: 10px;
-      }
-    }
-  }
+		.img-content {
+			padding-left: 1%;
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+			img {
+				border-radius: 10px;
+			}
+		}
+	}
 
-    .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
+	.inverse-content {
+		padding-bottom: 30px;
+		border-bottom: 2px solid @navigation-border;
 
-    .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
+		@media @mobile {
+			flex-direction: column;
+		}
 
-  .content-destination {
-    width: 75%;
-    margin: 0 auto 30px;
+		.text-content {
+			padding-left: 1%;
+			padding-right: 0;
+			width: 48%;
 
-    img {
-      border-radius: 10px;
-    }
-  }
+			@media @mobile {
+				width: 99%;
+			}
+		}
 
-  .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
-    display: flex;
-    justify-content: space-between;
+		.img-content {
+			padding-right: 1%;
+			padding-left: 0;
+			width: 48%;
 
-    .destination {
-      width: 30%;
-      margin-bottom: 30px;
-    }
-  }
-}// home
+			@media @mobile {
+				width: 99%;
+			}
+		}
+	}
+
+	.content-destination {
+		width: 99%;
+		margin: 0 auto 30px;
+
+		img {
+			border-radius: 10px;
+			width: 99%;
+		}
+	}
+
+	.content-pick {
+		padding-top: 30px;
+		border-top: 2px dashed @navigation-border;
+		display: flex;
+		justify-content: space-between;
+
+		.btn {
+			.buttonstyle(100%; #06806f; white; 2rem);
+
+			&:hover {
+				.rotationanimation(360deg; 1s);
+			}
+		}
+		@media @mobile {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.destination {
+			width: 30%;
+			margin-bottom: 30px;
+
+			@media @mobile {
+				width: 99%;
+				text-align: center;
+
+				// .btn {
+				// 	background-color: teal;
+				// 	width: 40%;
+				// }
+			}
+		}
+	}
+} // home

@@ -1,1 +1,52 @@
-// Navigation Styles here
+ 
+.nav {
+    
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 2px dashed @navigation-border;
+
+    
+
+        
+        height: 100%;
+        margin: 5px;
+        padding: 10px;
+        
+        
+        @media @mobile {
+
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+            
+      
+            
+          }
+
+
+   ul {
+       
+      display: flex;
+      justify-content: space-between;
+       
+       
+   }
+
+
+   li {
+    
+       margin: 0 20px;
+       font-size: 1.3em;
+   }
+
+   a {
+       text-decoration: none;
+       color: black;
+   }
+
+
+
+
+
+
+}
